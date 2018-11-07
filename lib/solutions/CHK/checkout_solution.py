@@ -11,7 +11,7 @@ def checkout(skus):
 
     for char in skus:
 
-        if char != 'A' and char != 'B' and char != 'C' and char != 'D' and char != 'E' and char != 'F':
+        if not char in items:
             return -1
 
         items[char] += 1
