@@ -4,7 +4,11 @@
 # skus = unicode string
 def checkout(skus):
 
-    items = {'A': 0, 'B': 0, 'C': 0, 'D':0, 'E': 0, 'F': 0}
+    items = {}
+
+    for char in 'ABCDEFGHIKLMNOPQRSTVXYZ':
+        items[char] = 0
+
     for char in skus:
 
         if char != 'A' and char != 'B' and char != 'C' and char != 'D' and char != 'E' and char != 'F':
