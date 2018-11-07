@@ -24,7 +24,7 @@ def checkout(skus):
 
     specialE = 0
     while items['E'] >= 2 and items['B'] > 0:
-        specialE += 40
+        specialE += 80
         items['E'] -= 2
         items['B'] -= 1
 
