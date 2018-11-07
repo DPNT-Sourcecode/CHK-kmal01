@@ -50,7 +50,26 @@ def checkout(skus):
     while items['K'] >= 2:
         special['K'] += 150
         items['K'] -= 2
+    
+    while items['P'] >= 5:
+        special['P'] += 200
+        items['P'] -= 5
 
+    while items['Q'] >= 3:
+        special['Q'] += 80
+        items['Q'] -= 3
+
+    while items['V'] >= 2:
+        if items['V'] >= 3:
+            items['V'] -= 3
+            special['V'] += 130
+        else:
+            items['V'] -= 2
+            special['V'] += 90 
+
+    while items['U'] >= 3:
+        special['U'] += 20
+        items['U'] -= 3  
 
     special_sum = 0
     for char in special:
