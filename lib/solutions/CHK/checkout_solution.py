@@ -7,4 +7,17 @@ def checkout(skus):
     for char in skus:
         items[char] += 1
     
-    return items
+    specialA = 0
+    while items['A'] >= 3:
+        specialA += 130
+        items['A'] -= 3
+
+    specialB = 0
+    while items['B'] >= 2:
+        specialB += 45
+        items['B'] -= 2
+
+
+    total_sum = specialA + items['A']*50 + items['B'] * 30 + items['C'] * 20 + items['D'] * 15 
+
+    return total_sum
