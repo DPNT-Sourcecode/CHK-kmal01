@@ -1,0 +1,13 @@
+[[source]]
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[dev-packages]
+
+[packages]
+tdl-client-python = "==0.25.0"
+coverage = "==4.5.1"
+
+[requires]
+python_version = "2.7"
