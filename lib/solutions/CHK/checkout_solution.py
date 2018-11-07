@@ -60,6 +60,11 @@ def checkout(skus):
         special['P'] += 200
         items['P'] -= 5
 
+    while items['R'] >= 3 and items['Q'] >= 1:
+        special['R'] += 150
+        items['R'] -= 3
+        items['Q'] -= 1
+
     while items['Q'] >= 3:
         special['Q'] += 80
         items['Q'] -= 3
