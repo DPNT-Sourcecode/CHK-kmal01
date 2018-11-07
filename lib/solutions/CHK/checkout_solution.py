@@ -8,7 +8,7 @@ def checkout(skus):
     price = {'A': 50, 'B':30, 'C':20, 'D': 15, 'E':40, 'F':10, 'G':20, 'H':10, 'I':35, 'J':60, 'K':80, 'L':90, 'M':15, 'N':40, 'O':10, 'P': 50, 'Q':30, 'R':50, 'S':30, 'T':20, 'U':40, 'V':50, 'W':20, 'X':90, 'Y':10, 'Z':50}
     special = {'A':0, 'B':0, 'E':0, 'F':0, 'H':0, 'K':0, 'N':0, 'P':0, 'Q':0, 'R':0, 'U':0, 'V':0}
 
-    for char in 'ABCDEFGHIJKLMNOPQRSTVXYZ':
+    for char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
         items[char] = 0
 
     for char in skus:
