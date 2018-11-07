@@ -6,7 +6,7 @@ def checkout(skus):
 
     items = {}
     special = {}
-    price = {'A': 50, 'B':30, 'C':20, 'D': 15, 'E':40, 'F':10, 'G':20, 'H':10, 'I':35, 'J':60, 'K':80, 'L':90, 'M':15, 'N':40, 'O':10, 'P': 50, 'Q':30, 'R':50, 'S':30, 'T':20, 'U':40, 'V':50, 'W':20, 'X':90, 'Y':10, 'Z':50}
+    price = {'A': 50, 'B':30, 'C':20, 'D': 15, 'E':40, 'F':10, 'G':20, 'H':10, 'I':35, 'J':60, 'K':70, 'L':90, 'M':15, 'N':40, 'O':10, 'P': 50, 'Q':30, 'R':50, 'S':20, 'T':20, 'U':40, 'V':50, 'W':20, 'X':17, 'Y':20, 'Z':21}
 
     for char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
         items[char] = 0
@@ -49,7 +49,7 @@ def checkout(skus):
             special['H'] += 45
 
     while items['K'] >= 2:
-        special['K'] += 150
+        special['K'] += 120
         items['K'] -= 2
     
     while items['N'] >= 3 and items['M'] >= 1:
@@ -81,6 +81,9 @@ def checkout(skus):
     while items['U'] >= 4:
         special['U'] += 120
         items['U'] -= 4  
+    
+    group_sum = 0
+    while 
 
     special_sum = 0
     for char in special:
