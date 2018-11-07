@@ -4,10 +4,10 @@
 # skus = unicode string
 def checkout(skus):
 
-    items = {'A': 0, 'B': 0, 'C': 0, 'D':0, 'E': 0}
+    items = {'A': 0, 'B': 0, 'C': 0, 'D':0, 'E': 0, 'F': 0}
     for char in skus:
 
-        if char != 'A' and char != 'B' and char != 'C' and char != 'D' and char != 'E':
+        if char != 'A' and char != 'B' and char != 'C' and char != 'D' and char != 'E' and char != 'F':
             return -1
 
         items[char] += 1
@@ -33,7 +33,12 @@ def checkout(skus):
         specialB += 45
         items['B'] -= 2
 
+    specialF = 0
+    while items['F'] >= 3:
+        specialF += 20
+        items['F'] -= 3
 
-    total_sum = specialA + specialB + specialE + items['A']*50 + items['B'] * 30 + items['C'] * 20 + items['D'] * 15 + items['E'] * 40
+
+    total_sum = specialF + specialA + specialB + specialE + items['A']*50 + items['B'] * 30 + items['C'] * 20 + items['D'] * 15 + items['E'] * 40 + items['F'] * 10
 
     return total_sum
