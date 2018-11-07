@@ -3,4 +3,8 @@
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
-    raise NotImplementedError()
+    items = {'A': 0, 'B': 0, 'C': 0, 'D':}
+    for char in skus:
+        items[char] += 1
+    
+    return items
