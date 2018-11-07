@@ -83,7 +83,13 @@ def checkout(skus):
         items['U'] -= 4  
     
     group_sum = 0
-    while 
+    while items['S'] + items['T'] + items['X'] + items['Y'] + items['Z'] >= 3:
+        group_sum += 45
+        remove_items_num = 3
+        for char in 'ZSTYX':
+            while items[char] > 0 and remove_items_num > 0:
+                items[char] -= 1
+                remove_items_num -= 1
 
     special_sum = 0
     for char in special:
@@ -93,4 +99,4 @@ def checkout(skus):
     for char in items:
         usual_sum += items[char] * price[char]
 
-    return usual_sum + special_sum
+    return group_sum + usual_sum + special_sum
